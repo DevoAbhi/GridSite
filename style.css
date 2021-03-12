@@ -136,3 +136,34 @@ img{
   padding: 1.5rem 2rem;
   box-shadow: var(--shadow);
 }
+
+/* Info */
+
+.info{
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    padding: 3rem;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Portfolio */
+
+.portfolio{
+
+    background: var(--primary);
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img{
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+/* Footer */
