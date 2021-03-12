@@ -1,0 +1,138 @@
+/* CSS VARIABLES */
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body{
+    background-color: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.btn {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    border: 0;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.wrapper{
+    display: grid;
+    grid-gap: 20px;
+}
+
+/* Navigation */
+
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+    list-style: none;
+    
+}
+
+.main-nav a{
+    background-color: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+.main-nav a:hover{
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* Top Container */
+
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        'showcase top-box-a'
+        'showcase top-box-b';
+}
+
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/business.jpg);
+    
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.showcase h1{
+    color: var(--light);
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    color: var(--light);
+    margin-top: 0;
+}
+
+.top-box {
+    background-color: var(--primary);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.top-box .price{
+    font-size: 2.5rem;
+}
+
+.top-box-a {
+    grid-area: top-box-a;
+}
+
+.top-box-b {
+    grid-area: top-box-b;
+}
+
+/* Boxes */
+
+.boxes {
+    display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
