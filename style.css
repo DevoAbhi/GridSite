@@ -167,3 +167,14 @@ img{
 }
 
 /* Footer */
+
+footer{
+    margin-top: 2rem;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0.1rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* MEDIA Q */
